@@ -11,8 +11,23 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="android.lifeistech.com.litboard.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/list_view" />
+
+        <Button
+            android:text="投稿してみる"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:onClick="jumpryoku" />
+    </LinearLayout>
+
 </RelativeLayout>
