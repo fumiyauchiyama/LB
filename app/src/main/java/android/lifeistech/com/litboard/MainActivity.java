@@ -34,13 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
         mListView = (ListView)findViewById(R.id.list_view);
         mButton = (Button)findViewById(R.id.button);
-
-        mButton.setOnClickListener(this);
+        //mButton.setOnClickListener();
 
         items = new ArrayList<>();
         postAdapter = new PostAdapter(this,0,items);
 
-        mListView.setAdapter(PostAdapter);
+        mListView.setAdapter(postAdapter);
 
         refMug.addChildEventListener(new ChildEventListener() {
             @Override

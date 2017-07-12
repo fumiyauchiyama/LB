@@ -1,7 +1,6 @@
-import android.content.ClipData;
+package android.lifeistech.com.litboard;
+
 import android.content.Context;
-import android.lifeistech.com.litboard.Post;
-import android.lifeistech.com.litboard.R;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,13 +9,10 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import static android.lifeistech.com.litboard.R.id.post;
-
 /**
  * Created by fumiyauchiyama on 2017/07/10.
  */
-
-public class PostAdapter extends ArrayAdapter<Post>{
+public class PostAdapter extends ArrayAdapter<Post> {
 
     List<Post> items;
 
@@ -67,5 +63,3 @@ public class PostAdapter extends ArrayAdapter<Post>{
     }
 
 }
-
-
