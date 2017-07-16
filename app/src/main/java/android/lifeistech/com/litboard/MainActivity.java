@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         mListView.setAdapter(postAdapter);
 
+
         refMug.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
